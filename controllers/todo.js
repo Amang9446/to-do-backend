@@ -19,7 +19,7 @@ const createTodo = async (req, res) => {
 const getAllTodo = async (req, res) => {
     try {
         const allTodos = await prisma.todo.findMany()
-        res.status(200).json(allTodos)
+        res.status(200).json({ data: allTodos })
     } catch (error) {
         console.log(error);
         res.status(500).json({ error: error.message })
