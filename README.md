@@ -19,8 +19,6 @@ This is a simple TODO app backend built with Node.js, Express, Prisma, and Mongo
     - [Get a TODO by ID](#get-a-todo-by-id)
     - [Update a TODO](#update-a-todo)
     - [Delete a TODO](#delete-a-todo)
-  - [License](#license)
-
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/) (version 14 or higher)
@@ -32,5 +30,5 @@ This is a simple TODO app backend built with Node.js, Express, Prisma, and Mongo
 ### Clone the Repository
 
 ```sh
-git clone https://github.com/yourusername/todo-app-backend.git
+git clone https://github.com/Amang9446/to-do-backend.git
 cd todo-app-backend

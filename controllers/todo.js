@@ -29,14 +29,14 @@ const getAllTodo = async (req, res) => {
 const updateTodo = async (req, res) => {
     try {
         const { id } = req.params
-        const { title, description } = req.body;
+        const { title, description, completed } = req.body;
         const todo = await prisma.todo.findUnique({ where: { id } })
         if (todo) {
             const todo = await prisma.todo.update({
                 where: {
                     id
                 },
-                data: { title, description }
+                data: { title, description, completed }
             })
             res.status(200).json(todo)
         } else {
