@@ -27,6 +27,11 @@ This is a simple TODO app backend built with Node.js, Express, Prisma, and Mongo
 
 ## Getting Started
 
+## Prisma Setup
+-npm i prisma
+-npx prisma init
+-npx prisma generate(After writing the Schema)
+
 ### Clone the Repository
 
 ```sh
