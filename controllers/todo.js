@@ -66,7 +66,7 @@ const getTodoById = async (req, res) => {
 
 const deleteTodo = async (req, res) => {
     try {
-        const { id } = res.params
+        const { id } = req.params
         const todo = await prisma.todo.delete({ where: { id } })
         res.status(200).json({ message: "Deleted Successfully" })
     } catch (error) {
