@@ -5,5 +5,5 @@ router.post('/create-todo', createTodo)
 router.get('/get-todos', getAllTodo)
 router.get('/get-todo/:id', getTodoById)
 router.put('/update-todo/:id', updateTodo)
-router.delete('/delete-todo', deleteTodo)
+router.delete('/delete-todo/:id', deleteTodo)
 module.exports = router
